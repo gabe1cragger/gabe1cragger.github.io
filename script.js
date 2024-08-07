@@ -322,8 +322,8 @@ function gameOver(){
     gameState = "over";
 
     // Write score to readout
-    //let scoreReadout = document.getElementById("score-readout");
-    //scoreReadout.innerHTML = `SCORE: ${completedStrategemsList.length}`
+    let scoreReadout = document.getElementById("score-readout");
+    scoreReadout.innerHTML = `SCORE: ${completedStrategemsList.length}`
 
     // Write completed strategems to readout
     let stratagemReadout = document.getElementById("completed-strategems-readout");
