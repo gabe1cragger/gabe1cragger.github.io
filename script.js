@@ -187,7 +187,7 @@ function checkGameKeypress(keyCode, sfx){
         //Check if that success completes the entire sequence. 
         if(currentSequenceIndex == currentArrowSequenceTags.length){
             //Add time bonus and pause the countdown for the delay time
-            timeRemaining += CORRECT_TIME_BONUS;
+            //timeRemaining += CORRECT_TIME_BONUS;
             gameState = "hitlag";
 
             //Add completed stratagem to completed list and remove from active list
@@ -204,9 +204,9 @@ function checkGameKeypress(keyCode, sfx){
             }, NEW_STRATEGEM_TIMEOUT);
         }
     }
-    else if (keyCode == currentArrowSequenceTags[0].code){
+    //else if (keyCode == currentArrowSequenceTags[0].code){
         //Edge case; if they're wrong but their input is the same as the first code, reset to first.
-        currentSequenceIndex = 1;
+        //currentSequenceIndex = 1;
 
         //Play failure animation
         shakeArrows(FAILURE_SHAKE_TIME);
