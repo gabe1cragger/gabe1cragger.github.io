@@ -204,12 +204,12 @@ function checkGameKeypress(keyCode, sfx){
             }, NEW_STRATEGEM_TIMEOUT);
         }
     }
-    //else if (keyCode == currentArrowSequenceTags[0].code){
+    else if (keyCode == currentArrowSequenceTags[0].code){
         //Edge case; if they're wrong but their input is the same as the first code, reset to first.
-        //currentSequenceIndex = 1;
+        currentSequenceIndex = 1;
 
         //Play failure animation
-        //shakeArrows(FAILURE_SHAKE_TIME);
+        shakeArrows(FAILURE_SHAKE_TIME);
     }
     else{
         //Failure, reset progress
