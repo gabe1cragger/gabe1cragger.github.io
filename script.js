@@ -187,7 +187,7 @@ function checkGameKeypress(keyCode, sfx){
         //Check if that success completes the entire sequence. 
         if(currentSequenceIndex == currentArrowSequenceTags.length){
             //Add time bonus and pause the countdown for the delay time
-            //timeRemaining += CORRECT_TIME_BONUS;
+            timeRemaining += CORRECT_TIME_BONUS;
             gameState = "hitlag";
 
             //Add completed stratagem to completed list and remove from active list
