@@ -561,3 +561,4 @@ function initaliseConfigPopupInputs() {
             input.value = CONFIG.arrowKeys[inputKey].slice(-1).toUpperCase();
         }
     })
+}
