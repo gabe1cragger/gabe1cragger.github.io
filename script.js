@@ -209,7 +209,7 @@ function checkGameKeypress(keyCode, sfx){
         //currentSequenceIndex = 1;
 
         //Play failure animation
-        shakeArrows(FAILURE_SHAKE_TIME);
+        //shakeArrows(FAILURE_SHAKE_TIME);
     }
     else{
         //Failure, reset progress
